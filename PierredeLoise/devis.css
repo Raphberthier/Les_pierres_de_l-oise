@@ -1,0 +1,116 @@
+
+
+
+.barre-nav {
+  border-bottom: 1px solid;
+}
+.btnnav {
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  border: solid 1px white;
+  margin: 5px 5px;
+  background-color: white;
+  display: block;
+  padding: 0.5rem 1rem;
+    
+    text-decoration: none;
+}
+.btnnav:hover {
+  transform: scale(1.2);
+  text-decoration: none;
+}
+.logo {
+  font-family: 'Satisfy', cursive;
+  margin-left: 90px;
+  text-align: center;
+ }
+
+h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-contact{
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+input,
+label {
+  display: flex;
+  padding: 5px;
+}
+input,
+textarea {
+  align-items: center;
+  border-radius: 8px;
+  border: solid 1px;
+  width: 250px;
+}
+
+.formulaire {
+  display: flex;
+  grid-gap: 35px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: white;
+  margin-top: 15px;
+  padding: 5px;
+  box-shadow: #00000040 5px 5px 5px;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.contact {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  margin: 30px 15px;
+}
+
+.visite {
+  display: flex;
+  justify-content: center;
+  grid-gap: 15px;
+}
+
+.p-visite {
+  margin-right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.img-visit {
+  margin-left: 15px;
+  justify-content: center;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}

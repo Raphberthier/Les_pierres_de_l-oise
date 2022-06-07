@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT GOOGLE LINK -->
+    <!-- GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!--------------------------------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+    <!-- CSS/JS BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="nos-chantier-style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+<!-- KIT FONTAWSOME-->
+<script src="https://kit.fontawesome.com/de4b82448d.js" crossorigin="anonymous"></script>
+<!-- SCRIPT JAVA POPUP -->
+<script language="JavaScript">
+  function display_photo(p_name,p_w,p_h,p_legend) {
+     if (self.innerWidth) {
+        winwidth = self.innerWidth;
+        winheight = self.innerHeight;
+     }
+     else if (document.documentElement && document.documentElement.clientWidth) {
+        winwidth = document.documentElement.clientWidth;
+        winheight = document.documentElement.clientHeight;
+     }
+     else if (document.body) {
+        winwidth = document.body.clientWidth;
+        winheight = document.body.clientHeight;
+     }
+     if (Number(p_w) < winwidth) winwidth = Number(p_w);
+     if (Number(p_h) < winheight) winheight = Number(p_h);
+     winwidth += 8; winheight += 40;
+   pwin=window.open("","","toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1,scrollbars=yes,copyhistory=0,width="+winwidth+",height="+winheight+",left=10,top=10" );
+     pwin.document.write("<html><head>" );
+     pwin.document.write("<title>Zoom</title>" );
+     pwin.document.write("<style type=text/css>" );
+     pwin.document.write("body {" );
+     pwin.document.write("objectif-fit:cover;");
+     pwin.document.write("margin:0;" );
+     pwin.document.write("padding:0;" );
+     pwin.document.write("color:white;" );
+     pwin.document.write("background-color:black; }" );
+     pwin.document.write("</style>" );
+     pwin.document.write("</head>" );
+     pwin.document.write("<body>" );
+     pwin.document.write("<img src="+p_name+" width="+p_w+" height="+p_h+">" );
+     pwin.document.write("<table noborder width=100%><tr>" );
+     pwin.document.write("<form><td align=left>"+p_legend+"</td>" );
+     pwin.document.write("<td align=right><input type='button' value='Fermer' onClick='window.close()'></td>" );
+     pwin.document.write("</tr></table></form>" );
+     pwin.document.write("</body></html>" );
+  }
+  </script>
+    <title>Nos chantiers exterieurs</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION -->
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <div class="nav barre-nav">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="btnnav" aria-current="page" href="Index.html">Accueil</a>
+          </li>
+          <div class="dropdown">
+            <button
+              class="btnnav dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Nos chantiers
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="btnnav dropdown-item" href="nos_chantiers_int.html"
+                  >Nos chantiers interieurs</a
+                >
+              </li>
+              <li>
+                <a class="btnnav dropdown-item" href="nos_chantiers_ext.html"
+                  >Nos chantiers exterieurs</a
+                >
+              </li>
+              <li><a class="btnnav dropdown-item" href="inspiration.html">Inspiration</a></li>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="btnnav" href="devis.php">Contact</a>
+          </li>
+        </ul>
+        <h1 class="logo">Les pierres de l'oise</h1>
+      </div>
+    </header>
+    <main>
+      <div class="presentation">
+        <!-- CAROUSELLE BANNIERE -->
+        <hr />
+        <div class="banniere">
+          <h3>Rénovation & Ravalement de façade</h3>
+          <p>
+            En rénovation ou en neuf, votre façade se pare de l'enduit à la
+            chaux naturelle DECOPIERRE, sculpté à la main par nos artistes.
+          </p>
+        </div>
+        <hr />
+
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" style="height: 500px">
+            <div class="carousel-item active">
+              <a href="javascript:display_photo ('images/facades/IMG-20220407-WA0194.jpg','1200','1600','legende')">
+              <img
+                src="images/facades/IMG-20220308-WA0016.jpg"
+                class="d-block w-100"
+                alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="javascript:display_photo ('images/facades/IMG-20220308-WA0020.jpg','1200','1600','legende')">
+              <img
+                src="images/facades/IMG-20220308-WA0013.jpg"
+                class="d-block w-100"
+                alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="javascript:display_photo ('images/facades/IMG-20220308-WA0021.jpg','1200','1600','legende')">
+              <img
+                src="images/facades/IMG-20220308-WA0021.jpg"
+                class="d-block w-100"
+                alt="..."
+              /></a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- MAIN BLOC 1-->
+        <div class="content_1">
+          <p class="content_p">
+            Vous souhaitez rénover votre maison pour la mettre au goût du jour
+            ?<br />
+            Grâce à notre enduit décoratif à la chaux naturelle et poudre de
+            marbre,<br />
+            vous allez pouvoir réaliser vos rêves : changer de maison sans
+            déménager…
+          </p>
+        </div>
+      </div>
+<h3>Rénovez votre maison de l’extérieur !</h3>
+<div class="card_bloc_1">
+<div class="card mb-3" style="width: 75%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="images/facades/Avant_apres.png" style="height: 100%; object-fit: cover;" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Rénovez votre maison de l’extérieur !</h5>
+        <p class="card-text"> Au fil des années, une façade se détériore, ces dégradations sont
+          dues en grande partie aux facteurs climatiques et à la pollution. Il
+          faut bien entendu l’entretenir régulièrement. Mais arrive un moment
+          où une façade doit être entièrement rénovée. C’est alors l’occasion
+          idéale pour lui apporter un cachet unique en optant pour un enduit
+          DECOPIERRE aspect pierre naturelle. Grâce à notre concept, vous
+          n’allez pas seulement rénover votre extérieur mais donner à votre
+          maison une nouvelle identité… Les solutions que vous offre
+          <strong> Pierres De L'oise</strong> sont nombreuses et variées. Vous
+          pouvez choisir de rénover intégralement votre façade selon le style
+          de votre région : pierre de taille, briques, etc. D’autre part, vous
+          avez la possibilité de mettre l’accent sur certaines parties de
+          votre extérieur : les encadrements, les chaines d’angles, les
+          modénatures, etc.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="width: 75%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="images/facades/1647252409847.jpg" style="height: 100%; object-fit: cover;" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Mur extérieur en pierre et blason sculptés</h5>
+        <p class="card-text"> Ce mur extérieur en pierre accorde plus de singularité à cette maison moderne récemment rénovée.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+   <!-- bloc_3-->   
+<div class="bloc_3" > 
+  <h3 class="h3_bloc_3">Un apercus de nos chantiers </h3>
+  <div class="card mb-3" style="width: 75%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/facades/1647252409847.jpg" style="height: 100%; object-fit: cover;" class="img-fluid rounded-start" alt="...">
+        <img src="images/facades/1647252409847.jpg" style="height: 100%; object-fit: cover;" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Mur extérieur en pierre et blason sculptés</h5>
+          <p class="card-text"> Ce mur extérieur en pierre accorde plus de singularité à cette maison moderne récemment rénovée.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+    <!-- FOOTER ( ajouter lien reseaux social plus logo )-->
+    <footer>
+      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<div class="container bloc-sm">
+<div class="row">
+<div class="col-sm-12">
+<p class="text-center black">
+  Les pierres de l'oise.<br>
+</p>
+<div class="row row-no-gutters social">
+  <div class="col-sm-3">
+    <div class="text-center">
+      <a class="social" href="#" aria-label="twitter"><span class="fa fa-twitter icon-md"></span></a>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="text-center">
+      <a class="social" href="#" aria-label="facebook"><span class="fa fa-facebook icon-md"></span></a>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="text-center">
+      <a class="social" href="#" aria-label="dribbble" ><span class="fa fa-dribbble icon-md"></span></a>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="text-center">
+      <a class="social" href="#" aria-label="instagram"><span class="fa fa-instagram icon-md"></span></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer - bloc-8 END -->
+
+</div>
+      </footer>
+  </body>
+</html>

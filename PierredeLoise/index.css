@@ -1,0 +1,118 @@
+body {
+  background-color: white;
+}
+a:hover{
+color: black;
+
+}
+ .logo {
+  font-family: 'Satisfy', cursive;
+  margin-left: 90px;
+  text-align: center;
+ }
+.barre-nav {
+  border-bottom: 1px solid;
+}
+.btnnav {
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  border: solid 1px white;
+  margin: 5px 5px;
+  background-color: white;
+  display: block;
+  padding: 0.5rem 1rem;
+    
+    text-decoration: none;
+}
+.btnnav:hover {
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+.d-block {
+  object-fit: cover;
+  height: 900px;
+}
+
+.carousel {
+  margin-top: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel img {
+  height:500px;
+}
+
+.description {
+  font-size: larger;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contener_descript {
+  display: flex;
+    flex-direction: row;
+    grid-gap: 50px;
+    font-size: 20px;
+    text-align: -webkit-center;
+    align-items: center;
+}
+
+.contener_descript img {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+}
+.cont {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-top: 60px;
+}
+
+.cont img {
+  width: 50%;
+}
+
+.conteneur {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteneur img {
+  border-radius: 50%;
+}
+
+.conteneur a {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  text-align: -webkit-center;
+    align-items: center;
+    font-size: x-large;
+    margin-top: 25px;
+}
+
+.contact p {
+  width: 50%;
+}
+
+.img-contact {
+  width: 50%;
+    height: 500px;
+    object-fit: cover;
+}
+
